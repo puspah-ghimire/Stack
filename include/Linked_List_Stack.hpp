@@ -16,6 +16,7 @@ public:
     int pop();
     int top();
     bool is_Empty();
+    void display();
 };
 
 #endif

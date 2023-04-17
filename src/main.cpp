@@ -24,4 +24,5 @@ int main()
     stack.push(2);
     cout << stack.pop() << endl;
     cout << stack.top() << endl;
+    stack.display();
 }

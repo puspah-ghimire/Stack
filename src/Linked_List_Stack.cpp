@@ -14,7 +14,14 @@ void Linked_List_Stack ::push(int data)
 
 int Linked_List_Stack ::pop()
 {
-    return (list.removeFromHead());
+    if (is_Empty())
+    {
+        cout << "Stack Underflow!" << endl;
+    }
+    else
+    {
+        return (list.removeFromHead());
+    }
 }
 
 int Linked_List_Stack ::top()
@@ -26,5 +33,17 @@ int Linked_List_Stack ::top()
     else
     {
         return (list.HEAD->info);
+    }
+}
+
+void Linked_List_Stack ::display()
+{
+    if (is_Empty())
+    {
+        cout << "Stack is empty." << endl;
+    }
+    else
+    {
+        list.traverse();
     }
 }
