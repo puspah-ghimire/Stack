@@ -13,6 +13,7 @@ bool Array_Stack::is_Empty()
         return false;
     }
 }
+
 bool Array_Stack::is_Full()
 {
     if (TOP == MAX_STACK_SIZE - 1)
@@ -24,6 +25,7 @@ bool Array_Stack::is_Full()
         return false;
     }
 }
+
 void Array_Stack::push(int data)
 {
     if (is_Full())
@@ -36,6 +38,7 @@ void Array_Stack::push(int data)
         A_Stack[TOP] = data;
     }
 }
+
 int Array_Stack::pop()
 {
     if (is_Empty())
@@ -49,6 +52,7 @@ int Array_Stack::pop()
         return temp;
     }
 }
+
 int Array_Stack::top()
 {
     if (is_Empty())
@@ -60,6 +64,7 @@ int Array_Stack::top()
         return (A_Stack[TOP]);
     }
 }
+
 void Array_Stack::display()
 {
     if (is_Empty())
