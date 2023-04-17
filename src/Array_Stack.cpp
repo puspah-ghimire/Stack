@@ -43,7 +43,7 @@ int Array_Stack::pop()
 {
     if (is_Empty())
     {
-        cout << "Stack Overflow!" << endl;
+        cout << "Stack Underflow!" << endl;
     }
     else
     {

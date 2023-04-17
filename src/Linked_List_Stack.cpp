@@ -19,5 +19,12 @@ int Linked_List_Stack ::pop()
 
 int Linked_List_Stack ::top()
 {
-    return (0); // Returns the info of HEAD.
+    if (is_Empty())
+    {
+        cout << "Stack is empty." << endl;
+    }
+    else
+    {
+        return (list.HEAD->info);
+    }
 }

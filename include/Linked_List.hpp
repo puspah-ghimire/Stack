@@ -12,11 +12,10 @@ public:
 
 class Linked_List
 {
-private:
+public:
     Node *HEAD; // Pointer to the first node
     Node *TAIL; // Pointer to the last node
 
-public:
     Linked_List();
     ~Linked_List();
     bool isEmpty();
