@@ -6,10 +6,10 @@ int main()
 {
     cout << "The following are the outputs of Stack implementation using Array:" << endl;
     Array_Stack s;
-    
+
     s.pop();
     s.top();
-    
+
     s.push(5);
     cout << "Pushed: 5" << endl;
     s.push(6);
