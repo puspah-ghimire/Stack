@@ -74,6 +74,7 @@ void Array_Stack::display()
     else
     {
         int i = TOP;
+        cout << "The elements are: " << endl;
         for (i; i >= 0; i--)
         {
             cout << A_Stack[i] << " ";
